@@ -5,7 +5,7 @@ const axios = require('axios');
 const app = express();
 const port = 8000;
 
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit:'50mb'}));
 
 const url = 'http://149.137.246.7:47910/process_resume';
 
